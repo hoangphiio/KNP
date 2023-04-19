@@ -1,3 +1,8 @@
 .banner {
- 
+ &-content{
+    &-img{
+        position: relative;
+        padding-top: calc((450 / 1366) * 100%);
+    }
+ }
 }
