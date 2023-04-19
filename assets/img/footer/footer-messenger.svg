@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="messenger">
+    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" id="background" fill="#0084FF" stroke="none" />
+    <g id="icon" transform="translate(7.5 7.9545455)">
+      <path d="M25 11.575C25 17.9682 19.4023 23.15 12.5 23.15C11.2882 23.1508 10.0819 22.988 8.91364 22.6659L4.65682 25L4.65682 20.5864C1.81818 18.4659 0 15.2273 0 11.575C0 5.18182 5.59773 1.11022e-15 12.5 1.11022e-15C19.4023 1.11022e-15 25 5.18409 25 11.575L25 11.575Z" id="Path" fill="#FFFFFF" stroke="none" />
+      <path d="M20.575 8.33409L13.7409 15.5841L10.5591 12.1909L4.34773 15.5864L11.1818 8.33409L14.4432 11.7273L20.575 8.33409Z" id="Path" fill="#2196F3" stroke="none" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+@import url("../js/library/aos/aos.css");
+@import url("../js/library/hover/hover.css");
+@import url("../js/library/swiper/swiper-bundle-min.css");
+
+// component
+@import "./component/burgerMenu";
+
+// core
+@import "./core/animation";
+@import "./core/base";
+@import "./core/mixin";
+@import "./core/reset";
+@import "./core/variable";
+
+// layout
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
