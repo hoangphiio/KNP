@@ -5,15 +5,16 @@ export default function dropdownModule() {
 
     hamburger.on("click", function () {
       menu.slideToggle();
+      menu.toggleClass("active");
       $(this).toggleClass("active");
     });
-    $(".menu-mobile").click(function (e) {
+    $(".mobile-menu").click(function (e) {
       $(".menu > ul").toggleClass("show-on-mobile");
       e.preventDefault();
     });
     $(".menu > ul > li").click(function () {
-      if ($(window).width() <= 1120) {
-        $(this).children("ul").fadeToggle("");
+      if ($(window).width() <= 1130) {
+        $(this).children("ul").fadeToggle(150);
       }
     });
   });

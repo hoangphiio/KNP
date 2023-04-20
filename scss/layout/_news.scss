@@ -1,0 +1,19 @@
+.tab {
+  &-wrap {
+  }
+  &-box {
+    & .tab-inner {
+      &-tablist {
+        & .n-tab-list {
+          & .n-tab {
+            a {
+            }
+          }
+        }
+      }
+      & .tablist{
+        
+      }
+    }
+  }
+}

@@ -221,6 +221,9 @@
           ul{
             &:nth-child(2){
               margin-bottom: 9rem;
+              @include max(610px){
+                margin-bottom: 2rem;
+              }
             }
           }
         }

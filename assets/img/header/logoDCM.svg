@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60.282745px" height="60.282745px" viewBox="0 0 60.282745 60.282745" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="50%" cy="50%" fx="50%" fy="50%" r="50.72891%" gradientTransform="translate(0.5,0.5),rotate(-80.27553),translate(-0.5,-0.5)" id="gradient_1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="62.90027%" stop-color="#E7F7FF" />
+      <stop offset="100%" stop-color="#9ADFFF" />
+    </radialGradient>
+  </defs>
+  <g id="Group">
+    <path d="M60.2827 30.1414C60.2827 46.7991 46.7991 60.2827 30.1414 60.2827C13.5075 60.2827 0 46.7991 0 30.1414C0 13.5075 13.4837 0 30.1414 0C46.7991 0 60.2827 13.5075 60.2827 30.1414Z" id="Path-Copy" fill="url(#gradient_1)" stroke="none" />
+    <g id="Group-54-Copy" transform="translate(16 13.090332)">
+      <path d="M27.2806 6.40166L23.5435 12.8033L16.0694 12.8033L12.3323 6.40166L16.0694 1.33692e-07L23.5435 4.45641e-08L27.2806 6.40166Z" id="Polygon-Copy-4" fill="#415086" fill-opacity="0.5019608" fill-rule="evenodd" stroke="none" />
+      <path d="M14.9483 27.4689L11.2112 33.8705L3.73707 33.8705L0 27.4689L3.73707 21.0672L11.2112 21.0672L14.9483 27.4689Z" id="Polygon-Copy-7" fill="#FFC107" fill-rule="evenodd" stroke="none" />
+      <path d="M14.9483 13.4241L11.2112 19.8257L3.73707 19.8257L0 13.4241L3.73707 7.0224L11.2112 7.0224L14.9483 13.4241Z" id="Polygon-Copy-8" fill="#28B0FF" fill-opacity="0.5019608" fill-rule="evenodd" stroke="none" />
+      <path d="M27.2806 20.4465L23.5435 26.8481L16.0694 26.8481L12.3323 20.4465L16.0694 14.0448L23.5435 14.0448L27.2806 20.4465Z" id="Polygon-Copy-9" fill="#34B933" fill-opacity="0.5019608" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
