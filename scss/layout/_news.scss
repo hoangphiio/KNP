@@ -11,8 +11,31 @@
           }
         }
       }
-      & .tablist{
-        
+      & .tablist {
+        &-inner {
+          & .tablist-content {
+            & .item-content {
+              & .item-box {
+                & .item-list {
+                  & .item-col {
+                    &:nth-child(1) {
+                      width: 70%;
+                      & .col-img {
+                        position: relative;
+                        padding-top: calc((376 / 850) * 100%);
+                        img {
+                        }
+                      }
+                    }
+                    &:nth-child(2) {
+                      width: 30%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

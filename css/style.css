@@ -677,6 +677,15 @@ table {
   position: relative;
   padding-top: calc((450 / 1366) * 100%); }
 
+.tab-box .tab-inner .tablist-inner .tablist-content .item-content .item-box .item-list .item-col:nth-child(1) {
+  width: 70%; }
+  .tab-box .tab-inner .tablist-inner .tablist-content .item-content .item-box .item-list .item-col:nth-child(1) .col-img {
+    position: relative;
+    padding-top: calc((376 / 850) * 100%); }
+
+.tab-box .tab-inner .tablist-inner .tablist-content .item-content .item-box .item-list .item-col:nth-child(2) {
+  width: 30%; }
+
 .footer {
   background: #fafafa; }
   .footer-box {
