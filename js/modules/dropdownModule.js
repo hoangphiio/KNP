@@ -4,7 +4,7 @@ export default function dropdownModule() {
       menu = $(".header-link"); //menu
 
     hamburger.on("click", function () {
-      menu.slideToggle();
+      menu.toggle();
       menu.toggleClass("active");
       $(this).toggleClass("active");
     });
@@ -14,7 +14,7 @@ export default function dropdownModule() {
     });
     $(".menu > ul > li").click(function () {
       if ($(window).width() <= 1130) {
-        $(this).children("ul").fadeToggle(150);
+        $(this).children("ul").fadeToggle();
       }
     });
   });
