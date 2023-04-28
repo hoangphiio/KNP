@@ -1,0 +1,433 @@
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="MasterPages/DPM.Master" CodeBehind="Price.aspx.cs" Inherits="FN.DigitalPortal.Intro.DPM.Price" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Content">
+    <section class="" data-aos="fade-up">
+        <div class="price">
+            <div class="container">
+                <div class="price-wrap">
+                    <div class="price-inner">
+                        <div class="price-list">
+                            <div class="list-title" data-aos="zoom-in">
+                                <h1>Bảng giá linh hoạt của chúng tôi</h1>
+                                <p>Đáp ứng mọi nhu cầu và quy mô của doanh nghiệp bạn</p>
+                            </div>
+                            <div class="price-arrow">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="list-table">
+                                <div class="table-form">
+                                    <div
+                                        class="table-box"
+                                        data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="100"
+                                        data-aos-offset="0">
+                                        <div class="table-inner">
+                                            <div class="form-title">
+                                                <h3>Basic</h3>
+                                            </div>
+                                            <div class="form-uses">
+                                                <p>6,000,000 <span>vnđ / tháng </span></p>
+                                                <p>+ 100,000/1 tài khoản từ tài khoản 51 trở lên</p>
+                                                <p>Tối đa <span>200 </span>người dùng</p>
+                                            </div>
+                                            <div class="form-bussiness">
+                                                <p>
+                                                    Dành cho doanh nghiệp nhỏ hoặc mới bắt đầu chuyển đổi số.
+                                                </p>
+                                            </div>
+                                            <div class="form-register">
+                                                <a onclick="showDialog('/frontend/register.aspx?productId=2&amp;package=1','Đăng ký','')">
+                                                    <span>Đăng ký </span>
+                                                </a>
+                                            </div>
+                                            <div class="form-img">
+                                                <img
+                                                    src="/Images/DPM/line-price.svg"
+                                                    alt=""
+                                                    class="img" />
+                                            </div>
+                                            <div class="form-feature">
+                                                <p>Tính năng</p>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Khởi tạo số hóa quy trình</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Security & Audit Log</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Dịch vụ hỗ trợ</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="table-box"
+                                        data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="150"
+                                        data-aos-offset="0">
+                                        <div class="table-inner">
+                                            <div class="form-title">
+                                                <h3>Standard</h3>
+                                            </div>
+                                            <div class="form-uses">
+                                                <p>21,000,000 <span>vnđ / tháng </span></p>
+                                                <p>+ 30,000đ/1 tài khoản từ tài khoản 201 trở lên</p>
+                                                <p>Tối đa <span>500 </span>người dùng</p>
+                                            </div>
+                                            <div class="form-bussiness">
+                                                <p>
+                                                    Doanh nghiệp vừa và lớn cần giải pháp số hóa quy trình nghiệp vụ phức tạp
+                                                </p>
+                                            </div>
+                                            <div class="form-register">
+                                                <a onclick="showDialog('/frontend/register.aspx?productId=2&amp;package=2','Đăng ký','')">
+                                                    <span>Đăng ký </span>
+                                                </a>
+                                            </div>
+                                            <div class="form-img">
+                                                <img
+                                                    src="/Images/DPM/line-price.svg"
+                                                    alt=""
+                                                    class="img" />
+                                            </div>
+                                            <div class="form-feature">
+                                                <p>Standard +</p>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Chữ ký số</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Transcation hub</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Dịch vụ hỗ trợ</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="table-box"
+                                        data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="200"
+                                        data-aos-offset="0">
+                                        <div class="table-inner">
+                                            <div class="form-title">
+                                                <h3>Professional</h3>
+                                            </div>
+                                            <div class="form-uses">
+                                                <p>30,000,000 <span>vnđ / tháng </span></p>
+                                                <p>+ 20,000/1 tài khoản từ tài khoản 501 trở lên</p>
+                                                <p>Tối đa <span>2000 </span>người dùng</p>
+                                            </div>
+                                            <div class="form-bussiness">
+                                                <p>
+                                                    Doanh nghiệp vừa và lớn cần giải pháp số hóa quy trình nghiệp vụ phức tạp
+                                                </p>
+                                            </div>
+                                            <div class="form-register">
+                                                <a onclick="showDialog('/frontend/register.aspx?productId=2&amp;package=3','Đăng ký','')">
+                                                    <span>Đăng ký </span>
+                                                </a>
+                                            </div>
+                                            <div class="form-img">
+                                                <img
+                                                    src="/Images/DPM/line-price.svg"
+                                                    alt=""
+                                                    class="img" />
+                                            </div>
+                                            <div class="form-feature">
+                                                <p>Standard +</p>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Sử dụng tất cả tính năng</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Đào tạo sản phẩm</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Hỗ trợ onsite theo yêu cầu</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="table-box"
+                                        data-aos="fade-zoom-in"
+                                        data-aos-easing="ease-in-back"
+                                        data-aos-delay="250"
+                                        data-aos-offset="0">
+                                        <div class="table-inner">
+                                            <div class="form-title">
+                                                <h3>Enterprise</h3>
+                                            </div>
+                                            <div class="form-uses" style="padding-top:35px">
+                                                <p><span>Liên hệ để có giá tốt nhất</span></p>
+                                                <p></p>
+                                                <p><span>Không giới hạn </span>người dùng</p>
+                                            </div>
+                                            <div class="form-bussiness">
+                                                <p>
+                                                    Doanh nghiệp quy mô lớn cần giải pháp số hóa quy trình nghiệp vụ phức tạp
+                                                </p>
+                                            </div>
+                                            <div class="form-register">
+                                                <a onclick="showDialog('/frontend/register.aspx?productId=2&amp;package=4','Đăng ký','')">
+                                                    <span>Đăng ký </span>
+                                                </a>
+                                            </div>
+                                            <div class="form-img">
+                                                <img
+                                                    src="/Images/DPM/line-price.svg"
+                                                    alt=""
+                                                    class="img" />
+                                            </div>
+                                            <div class="form-feature">
+                                                <p>Professional +</p>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Sử dụng tất cả tính năng</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Tư vấn theo mô hình, văn hóa doanh nghiệp</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ic-check"></i>
+                                                        <span>Cập nhật tính năng mới nhất</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-table">
+                            <div class="table-title" data-aos="zoom-in">
+                                <h2>Bảng so sánh tính năng chi tiết</h2>
+                                <span class="showmore">
+                                    <a class="ic-down-light"></a>
+                                    <div class="price-arrow">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                            </div>
+                            <div class="table-option">
+                                <table>
+                                    <tr>
+                                        <th>Tính năng</th>
+                                        <th class="col-starter">Basic</th>
+                                        <th class="col-basic">Standard</th>
+                                        <th class="col-professional">Professional</th>
+                                        <th class="col-enterprise">Enterprise</th>
+                                    </tr>
+                                    </th>
+                              <tr class="group test">
+                                  <td colspan="5">Chức năng chính</td>
+                              </tr>
+                                    <tr>
+                                        <td>Form Designer - Công cụ thiết kế Form</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Workfow Designer - Thiết kế quy trình động</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Report/View Designer - Báo cáo động</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quản lý cơ cấu tổ chức</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gửi và phê duyệt Online</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Board</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ủy quyền</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lịch sử phê duyệt</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dashboard</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile application</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Song ngữ (Anh-Việt)</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Báo cáo hiệu suất làm việc trên từng quy trình</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr class="group test1">
+                                        <td colspan="5">Security & Audit Log</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Log lịch sử truy cập</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Log hành vi người dùng</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bảo mật 2 lớp</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr class="group">
+                                        <td colspan="5">Tích hợp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tích hợp API</td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chữ ký số</td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transaction Hub</td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr class="group">
+                                        <td colspan="5">Dịch vụ hỗ trợ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hỗ trợ site</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hỗ trợ qua chat</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hỗ trợ qua điện thoại</td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hỗ trợ Onsite theo yêu cầu (3 ngày/năm)</td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-uncheck"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                        <td><i class="ic-check"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // content button toggle
+            $(".showmore").click(function () {
+                $(".table-option").slideToggle(400);
+            });
+        });
+
+        $(".rotate").click(function () {
+            $(this).toggleClass("down");
+        });
+    </script>
+</asp:Content>
+<%--<asp:Content ContentPlaceHolderID="ScriptContent" runat="server">
+</asp:Content>--%>

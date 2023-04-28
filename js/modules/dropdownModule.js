@@ -4,9 +4,9 @@ export default function dropdownModule() {
       menu = $(".header-link"); //menu
 
     hamburger.on("click", function () {
-      menu.toggle();
       menu.toggleClass("active");
       $(this).toggleClass("active");
+      $(".overlay").toggleClass("active");
     });
     $(".mobile-menu").click(function (e) {
       $(".menu > ul").toggleClass("show-on-mobile");
