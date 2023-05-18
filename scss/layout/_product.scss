@@ -1,0 +1,122 @@
+.pd {
+  padding-top: 100px;
+  background: linear-gradient(0deg, #ffffff 0%, #eef6ff 7.61%);
+  &-ct {
+    margin-bottom: 50px;
+    text-align: center;
+    h2 {
+      color: #0060ff;
+      font-size: 28px;
+      line-height: 34px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      span {
+        color: rgba(29, 58, 137, 1);
+      }
+    }
+    p {
+      color: #262626;
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+  &-flex {
+    display: grid;
+    align-items: initial;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: calc(100% / 2) calc(100% / 2);
+    margin: 0 -20px;
+    height: 100%;
+  }
+  &-col {
+    padding: 0 20px;
+    margin-bottom: 40px;
+    &:nth-child(1) {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+    &:nth-child(2) {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      .des-row {
+        flex-direction: row-reverse;
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      .des-row {
+        flex-direction: column;
+      }
+      div.des-col {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(4) {
+      grid-column: 4/5;
+      grid-row: 1/3;
+      .pd-list {
+        @include flex();
+        justify-content: start;
+        flex-direction: column-reverse;
+      }
+      .pd-title {
+        color: #858585;
+        font-size: 18px;
+      }
+      .des-row {
+        flex-direction: column-reverse;
+      }
+      div.des-col {
+        width: 100%;
+        &:nth-child(1) {
+          margin-bottom: 20px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 50px;
+        }
+        h2 {
+          color: #262626;
+        }
+      }
+    }
+  }
+  &-list {
+    height: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff;
+    &.selected {
+      border: 1px solid #28b0ff;
+      box-shadow: 0px 0px 8px #99c5f0;
+    }
+    .pd-title {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 22px;
+        color: #262626;
+        line-height: 30px;
+      }
+    }
+  }
+  &-des {
+    .des-row {
+      @include flex();
+      margin: 0 -10px;
+    }
+    .des-col {
+      padding: 0 10px;
+      color: #858585;
+      p {
+        font-size: 18px;
+      }
+      &:nth-child(1) {
+        width: 60%;
+      }
+      &:nth-child(2) {
+        width: 40%;
+      }
+    }
+  }
+}
