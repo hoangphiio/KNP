@@ -141,6 +141,7 @@
       h3 {
         padding-bottom: 1.2rem;
         color: #544837;
+        font-size: 18px;
       }
       p {
         font-size: 14px;
@@ -171,18 +172,15 @@
         }
       }
       .footer-box-col {
-        &:nth-child(1) {
+        width: 33.3333%;
+        @include max(765px) {
           width: 50%;
-          @include max(1010px) {
-            width: 33.333%;
-          }
-          @include max(765px) {
-            width: 50%;
-          }
-          @include max(610px) {
-            width: 100%;
-            margin-bottom: 2rem;
-          }
+        }
+        @include max(610px) {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        &:nth-child(1) {
           > ul > li {
             &:nth-child(1) > a > span {
               font-weight: 500;
@@ -203,43 +201,26 @@
           }
         }
         &:nth-child(2) {
-          width: 25%;
           @include max(1010px) {
             width: 33.333%;
             text-align: center;
           }
-          @include max(765px) {
-            width: 50%;
-          }
-          @include max(610px) {
-            width: 100%;
-            margin-bottom: 2rem;
-          }
           h3 {
+            font-size: 18px;
             padding-bottom: 2.5rem;
           }
-          ul{
-            &:nth-child(2){
+          ul {
+            &:nth-child(2) {
               margin-bottom: 9rem;
-              @include max(610px){
+              @include max(610px) {
                 margin-bottom: 2rem;
               }
             }
           }
         }
         &:nth-child(3) {
-          width: 25%;
-          @include max(1010px) {
-            width: 33.333%;
-          }
-          @include max(765px) {
-            width: 50%;
-          }
-          @include max(610px) {
-            width: 100%;
-          }
-          ul{
-            &:nth-child(5){
+          ul {
+            &:nth-child(5) {
               margin-bottom: 3rem;
             }
           }
@@ -247,6 +228,7 @@
       }
       & .dots {
         a {
+          position: relative;
           padding-left: 1.5rem;
           &::before {
             content: "";
@@ -272,7 +254,7 @@
       padding: 10px 0;
       background-color: #eeeeee;
       & .policy-box {
-        @include mid-flex();
+        @include flex-ct();
         justify-content: center;
         @include max(680px) {
           flex-direction: column;

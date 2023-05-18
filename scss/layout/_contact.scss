@@ -1,0 +1,329 @@
+.contact {
+  background: linear-gradient(180deg, #ffffff 12.61%, #eef6ff 61.07%);
+  &-inner {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    @include max(1024px) {
+      padding-bottom: 5rem;
+    }
+    & .contact-title {
+      margin-bottom: 3rem;
+      > h3 {
+        color: #2f281e;
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+        @include max(450px) {
+          font-size: 2.2rem;
+        }
+      }
+      > p {
+        color: #858585;
+        font-size: 2rem;
+        @include max(450px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    & .contact-address {
+      margin-bottom: 4.5rem;
+      & .address-list {
+        overflow: hidden;
+        position: relative;
+        & .address-wrap {
+          @include flex();
+          margin: 0 -2rem;
+          padding: 3rem 0;
+          flex-wrap: wrap;
+          border-top: 0.1rem dashed #a1a1a1;
+          border-bottom: 0.1rem dashed #a1a1a1;
+          & .address-box {
+            width: 33.3333%;
+            padding: 0 2rem;
+            @include max(950px) {
+              width: 50%;
+              margin-bottom: 0.3rem;
+            }
+            @include max(500px) {
+              width: 100%;
+            }
+            &:not(:last-child) {
+              border-right: 0.1rem solid #dadada;
+            }
+            &:nth-child(3) {
+              @include max(950px) {
+                width: 100%;
+              }
+            }
+            & .box-info {
+              min-height: 10.2rem;
+              text-align: center;
+              p {
+                &:nth-child(1) {
+                  font-weight: 700;
+                  font-size: 1.8rem;
+                  margin-bottom: 1.2rem;
+                  @include max(630px) {
+                    font-size: 1.6rem;
+                  }
+                }
+                &:nth-child(2) {
+                  max-width: 33rem;
+                  margin: 0 auto;
+                  span {
+                    font-size: 1.2rem;
+                    font-style: italic;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .contact-row {
+      @include flex();
+      @include max(1023px) {
+        flex-direction: column-reverse;
+      }
+      &-col {
+        width: 50%;
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+        @include max(1023px) {
+          width: 100%;
+          margin-bottom: 4rem;
+        }
+        &:nth-child(1) {
+          margin-right: 1.5rem;
+          overflow: hidden;
+          @include max(1023px) {
+            margin-right: 0;
+          }
+        }
+        &:nth-child(2) {
+          margin-left: 1.5rem;
+          @include max(1023px) {
+            margin-left: 0;
+          }
+        }
+        & .contact-info {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background: #fffbef;
+          padding: 2.5rem;
+          border: 0.3rem solid #fff;
+          & .info-hotline {
+            @include flex();
+            align-items: center;
+            margin-bottom: 2rem;
+            @include max(520px) {
+              flex-wrap: wrap;
+              padding: 1.2rem;
+            }
+            & .hotline-img {
+              @include flex();
+              align-items: center;
+              gap: 1rem;
+              width: 20%;
+              margin-right: 0.8rem;
+              @include max(520px) {
+                width: 100%;
+                justify-content: center;
+              }
+              > img {
+                max-width: 2rem;
+              }
+            }
+            & .hotline-text {
+              width: 80%;
+              @include max(520px) {
+                width: 100%;
+                text-align: center;
+              }
+              a {
+                span {
+                  font-size: 1.8rem;
+                  color: #262626;
+                  font-weight: 500;
+                }
+                > a:hover {
+                  color: $color-first;
+                }
+              }
+            }
+          }
+          & .info-location {
+            @include flex();
+            @include max(520px) {
+              flex-wrap: wrap;
+            }
+            & .location-img {
+              width: 20%;
+              @include flex();
+              margin-right: 0.8rem;
+              margin-top: 0.4rem;
+              @include max(520px) {
+                width: 100%;
+                justify-content: center;
+              }
+              > img {
+                width: 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+                object-fit: contain;
+              }
+            }
+            & .location-address {
+              width: 80%;
+              line-height: 30px;
+              @include max(520px) {
+                width: 100%;
+                text-align: center;
+              }
+              p {
+                color: #262626;
+                font-weight: 500;
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+        & .contact-map {
+          height: 100%;
+          display: block;
+          > iframe {
+            display: block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            @include max(1023px) {
+              height: 500px;
+            }
+          }
+        }
+        & .contact-form {
+          padding: 25px;
+          background: #fff;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          & .form-title {
+            > p {
+              font-size: 18px;
+              color: #262626;
+              padding-bottom: 20px;
+              @include max(450px) {
+                font-size: 16px;
+              }
+            }
+          }
+          & .form-input {
+            &:not(:last-child) {
+              padding-bottom: 20px;
+            }
+            > label {
+              font-size: 14px;
+            }
+            > label > span {
+              color: red;
+            }
+            > input {
+              width: 100%;
+              padding: 0.8rem 1.5rem;
+              margin-top: 0.8rem;
+              outline: 0;
+              border-radius: 0.4rem;
+              font-size: 1.6rem;
+              font-family: "Raleway";
+              border: 0.1rem solid #e8e8e8;
+              &:focus {
+                border: 0.1rem solid $color-first;
+              }
+            }
+            > .col-control > input {
+              width: 100%;
+              padding: 0.8rem 1.5rem;
+              margin-top: 0.8rem;
+              outline: 0;
+              border-radius: 0.4rem;
+              font-family: "Raleway";
+              font-size: 1.6rem;
+              border: 0.1rem solid #e8e8e8;
+              &:focus {
+                border: 0.1rem solid $color-first;
+              }
+            }
+            > .col-control > textarea {
+              width: 100%;
+              outline: 0;
+              display: block;
+              border-radius: 0.4rem;
+              padding: 0.6rem 1.5rem;
+              font-size: 1.6rem;
+              margin-top: 0.8rem;
+              resize: none;
+              border: 0.1rem solid #e8e8e8;
+              &:focus {
+                border: 0.1rem solid $color-first;
+              }
+            }
+            > textarea {
+              width: 100%;
+              outline: 0;
+              display: block;
+              border-radius: 0.4rem;
+              padding: 0.6rem 1.5rem;
+              font-size: 1.6rem;
+              margin-top: 0.8rem;
+              border: 0.1rem solid #e8e8e8;
+              resize: none;
+              &:focus {
+                border: 0.1rem solid $color-first;
+              }
+            }
+          }
+        }
+        & .contact-rapcha {
+          background: #fff;
+          & .captcha {
+            margin-left: 2.5rem;
+            & .iframe {
+              border-radius: 0.4rem;
+            }
+          }
+        }
+        & .contact-send {
+          padding: 2.5rem;
+          background: #fff;
+          position: relative;
+          padding-top: 2.5rem;
+          a {
+            width: 100%;
+            display: block;
+            p {
+              padding: 10px 0;
+              text-align: center;
+              color: #fff;
+              border-radius: 6px;
+              background: linear-gradient(
+                180deg,
+                #4cd9ed -0.01%,
+                #47aaec 50%,
+                #437fec 100%
+              );
+              font-weight: 700;
+            }
+          }
+          input {
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            color: #fff;
+            border: 0;
+            border-radius: 0.4rem;
+            background-color: $color-first;
+          }
+        }
+      }
+    }
+  }
+}

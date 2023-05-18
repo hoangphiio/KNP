@@ -69,9 +69,9 @@
                 content: "";
                 position: absolute;
                 width: 100%;
-                height: 30px;
+                height: 3rem;
                 background: transparent;
-                bottom: -25px;
+                bottom: -2.5rem;
                 left: 0;
                 cursor: pointer;
               }
@@ -107,11 +107,12 @@
               content: "";
               width: 0;
               height: 0.3rem;
-              bottom: -0.3rem;
+              bottom: -2.4rem;
               left: 0;
               opacity: 0.6;
-              background: #28b0ff;
               position: absolute;
+              border-radius: 1.2rem;
+              background: #28b0ff;
               transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
             }
             &:hover::before {
@@ -121,15 +122,18 @@
             &.selected {
               display: block;
               font-weight: 600;
-              border-bottom: 0.3rem solid #28b0ff;
+              &:hover::before {
+                display: none;
+              }
               & .item-list {
-                a {
-                  color: #28b0ff;
-                }
-                & .ic-down {
-                  &::before {
-                    color: #28b0ff;
-                  }
+                &::before {
+                  content: "";
+                  width: 100%;
+                  height: 0.5rem;
+                  background: #28B0FF;
+                  bottom: -2.4rem;
+                  position: absolute;
+                  border-radius: 1.2rem;
                 }
               }
             }
@@ -137,7 +141,7 @@
               margin-right: 0;
             }
             &.dropdown {
-              margin-right: 2rem;
+              margin-right: 4rem;
               & .item-box {
                 a {
                   margin-right: 0.4rem;
@@ -174,7 +178,6 @@
               }
               & .item-box {
                 padding: 0.9rem 1.5rem;
-                background: #f1fbff;
                 border-radius: 1.7rem;
                 margin-left: 18px;
                 margin-right: 30px;
@@ -183,11 +186,12 @@
                     content: "";
                     width: 0;
                     height: 0.3rem;
-                    bottom: -0.3rem;
+                    bottom: -2.4rem;
                     left: 0;
                     opacity: 0.6;
-                    background: #28b0ff;
                     position: absolute;
+                    border-radius: 1.2rem;
+                    background: #28b0ff;
                     transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
                   }
                   a {
@@ -342,9 +346,12 @@
           & .phone {
             margin-right: 2.5rem;
             a {
+              @include flex();
+              align-items: center;
+              color: #0091ff;
               i {
+                margin-right: 2rem;
                 &::before {
-                  color: #0091ff;
                   font-size: 1.8rem;
                 }
               }

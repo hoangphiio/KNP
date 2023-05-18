@@ -1,8 +1,60 @@
-.banner {
- &-content{
-    &-img{
-        position: relative;
-        padding-top: calc((450 / 1366) * 100%);
+.bn {
+  &-content {
+    .swiper-slide {
+      height: auto;
     }
- }
+  }
+  &-bg {
+    inset: 0;
+    position: absolute;
+    width: 100%;
+  }
+  &-block {
+    padding: 250px 0;
+    @include max(1366px) {
+      padding: 150px 0;
+    }
+  }
+  &-flex {
+    @include flex();
+  }
+  &-col {
+    width: 50%;
+    .bn-t {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 50px;
+        color: #2f281e;
+      }
+      p {
+        color: #405261;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .bn-img {
+      width: 232px;
+      margin-bottom: 20px;
+    }
+    .bn-res {
+      a {
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: 6px;
+        background: linear-gradient(
+          180deg,
+          #4cd9ed -0.01%,
+          #47aaec 50%,
+          #437fec 100%
+        );
+      }
+    }
+  }
 }

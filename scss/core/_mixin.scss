@@ -5,7 +5,19 @@
   display: -o-flex;
   display: flex;
 }
-@mixin mid-flex() {
+
+@mixin flex-al() {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+@mixin flex-ct() {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -18,7 +30,7 @@
   -webkit-justify-content: center;
 }
 
-@mixin mid-flex-btw() {
+@mixin flex-btw() {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

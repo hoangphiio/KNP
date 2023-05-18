@@ -1,10 +1,9 @@
 export default function aosModule() {
-    AOS.init({
-        // offset: 0,
-        duration: 1000,
-        delay: '100',
-        easing: 'ease',
-        // once: true,
-        // mirror: true,
-    });
+  AOS.init({
+    duration: 1000,
+    once: "true",
+    disable: function () {
+      return $(window).width() <= 1200;
+    },
+  });
 }
