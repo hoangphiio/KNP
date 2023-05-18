@@ -481,6 +481,7 @@
           opacity: 0;
           visibility: hidden;
           position: absolute;
+          overflow: auto;
           background-color: #fff;
           transition: all 0.4s ease;
           @include max(500px) {
@@ -506,8 +507,6 @@
             }
           }
           & ul {
-            height: 40rem;
-            overflow: auto;
             position: relative;
             align-items: start;
             justify-content: left;

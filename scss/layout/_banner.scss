@@ -1,5 +1,6 @@
 .bn {
   &-content {
+    position: relative;
     .swiper-slide {
       height: auto;
     }
@@ -20,7 +21,7 @@
   }
   &-col {
     width: 50%;
-    .bn-t {
+    .bn-title {
       h1 {
         margin-bottom: 20px;
         font-size: 50px;
@@ -54,6 +55,114 @@
           #47aaec 50%,
           #437fec 100%
         );
+      }
+    }
+  }
+  &.bn-news {
+    .bn-block {
+      padding: 80px 0;
+    }
+    .bn-col {
+      width: 100%;
+      text-align: center;
+    }
+    .bn-title {
+      h1 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: #002485;
+        text-transform: uppercase;
+      }
+    }
+    .bn-sr {
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  &.bn-cm {
+    .bn-block {
+      padding: 50px 0;
+    }
+    .bn-col {
+      width: 100%;
+      .bn-img{
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    .bn-title {
+      margin-bottom: 30px;
+      text-align: center;
+      h2 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        color: #2f281e;
+      }
+    }
+  }
+}
+
+.cn {
+  &-inner {
+    position: relative;
+  }
+  &-bg {
+    inset: 0;
+    position: absolute;
+  }
+  &-box {
+    padding: 100px 0;
+  }
+  &-title {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    h3 {
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 46px;
+      color: #ffffff;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  &-link {
+    text-align: center;
+    a {
+      width: fit-content;
+      display: inline-block;
+      padding: 8px 50px;
+      color: #fff;
+      font-weight: 700;
+      background: linear-gradient(
+        180deg,
+        #4cd9ed -0.01%,
+        #47aaec 50%,
+        #437fec 100%
+      );
+      border-radius: 8px;
+    }
+  }
+}
+.award {
+  &-box {
+  }
+  &-inner {
+  }
+  &-content {
+    overflow: hidden;
+    position: relative;
+    & .content-img {
+      position: relative;
+      padding-top: calc((400 / 1366) * 100%);
+      @include max(600px) {
+        padding-top: calc((400 / 1366) * 140%);
       }
     }
   }

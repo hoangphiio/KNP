@@ -436,20 +436,3 @@
   }
 }
 
-.award {
-  &-box {
-  }
-  &-inner {
-  }
-  &-content {
-    overflow: hidden;
-    position: relative;
-    & .content-img {
-      position: relative;
-      padding-top: calc((400 / 1366) * 100%);
-      @include max(600px) {
-        padding-top: calc((400 / 1366) * 140%);
-      }
-    }
-  }
-}
