@@ -319,58 +319,73 @@
 }
 
 .customer {
-  &-card {
-    & .customer-body {
-      overflow: hidden;
+  &-body {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    &:hover .customer-img img {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  &-img {
+    overflow: hidden;
+    position: relative;
+    padding-top: calc((196 / 330) * 100%);
+    img {
+      transition: 1s ease;
+    }
+  }
+  &-content {
+    padding: 3rem;
+    background: #f8f8f8;
+    h3 {
+      @include lc(2);
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      @include lc(3);
+      color: #858585;
+      margin-bottom: 2rem;
+    }
+    & .customer-button {
+      margin: 0 auto;
       position: relative;
-      border-radius: 1rem;
-      &:hover .customer-img img {
-        transform: translate(-50%, -50%) scale(1.1);
-      }
-      & .customer-img {
+      width: fit-content;
+      a {
+        display: block;
         overflow: hidden;
-        position: relative;
-        padding-top: calc((196 / 330) * 100%);
-        img {
-          transition: 1s ease;
+        border-radius: 6px;
+        text-align: center;
+        padding: 0.9rem 3.5rem;
+        background: linear-gradient(
+          180deg,
+          #4cd9ed -0.01%,
+          #47aaec 50%,
+          #437fec 100%
+        );
+        span {
+          font-weight: 700;
+          color: #fff;
         }
       }
-      & .customer-content {
-        padding: 3rem;
-        background: #f8f8f8;
-        h3 {
-          @include lc(2);
-          font-weight: 600;
-          font-size: 1.6rem;
-          margin-bottom: 1rem;
+    }
+  }
+  &-link {
+    a {
+      width: fit-content;
+      @include flex-al();
+      color: #0060ff;
+      margin: 0 0 0 auto;
+      i{
+        margin-right: 10px;
+        &::before{
+          font-size: 20px;
         }
-        p {
-          @include lc(3);
-          color: #858585;
-          margin-bottom: 2rem;
-        }
-        & .customer-button {
-          margin: 0 auto;
-          position: relative;
-          width: fit-content;
-          a {
-            display: block;
-            overflow: hidden;
-            border-radius: 6px;
-            text-align: center;
-            padding: 0.9rem 3.5rem;
-            background: linear-gradient(
-              180deg,
-              #4cd9ed -0.01%,
-              #47aaec 50%,
-              #437fec 100%
-            );
-            span {
-              font-weight: 700;
-              color: #fff;
-            }
-          }
-        }
+      }
+      span{
+        line-height: 32px;
       }
     }
   }
@@ -435,4 +450,3 @@
     }
   }
 }
-

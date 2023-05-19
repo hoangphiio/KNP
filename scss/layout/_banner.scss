@@ -11,18 +11,27 @@
     width: 100%;
   }
   &-block {
-    padding: 250px 0;
-    @include max(1366px) {
-      padding: 150px 0;
+    padding: 50px 0;
+    &.bn2 {
+      padding-top: 150px;
     }
   }
   &-flex {
     @include flex();
   }
+  &-title {
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-weight: 700;
+      font-size: 43px;
+      line-height: 60px;
+    }
+  }
   &-col {
     width: 50%;
     .bn-title {
-      h1 {
+      h2 {
         margin-bottom: 20px;
         font-size: 50px;
         color: #2f281e;
@@ -57,6 +66,66 @@
         );
       }
     }
+    .content-ds {
+      position: relative;
+      .dmy {
+        margin-bottom: 60px;
+        p {
+          position: relative;
+          font-style: italic;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 35px;
+          text-align: center;
+          color: #ffffff;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 31px;
+            height: 3px;
+            top: 0;
+            left: 50px;
+            bottom: 0;
+            margin: auto;
+            background-color: #fff;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 31px;
+            height: 3px;
+            top: 0;
+            right: 50px;
+            bottom: 0;
+            margin: auto;
+            background-color: #fff;
+          }
+        }
+      }
+      .discount {
+        top: 45px;
+        right: 0;
+        left: 0;
+        position: absolute;
+        @include flex-ct();
+        a {
+          display: inline-block;
+          width: fit-content;
+          padding: 8px 40px;
+          font-weight: 900;
+          font-size: 45px;
+          line-height: 53px;
+          color: #fd3e3e;
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 2px 4px rgba(4, 158, 255, 0.5);
+          border-radius: 31px;
+        }
+      }
+    }
+    .content-img {
+      position: relative;
+      z-index: 2;
+    }
   }
   &.bn-news {
     .bn-block {
@@ -88,7 +157,7 @@
     }
     .bn-col {
       width: 100%;
-      .bn-img{
+      .bn-img {
         width: 80%;
         margin: 0 auto;
       }
