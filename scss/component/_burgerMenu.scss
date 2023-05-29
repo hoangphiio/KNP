@@ -8,11 +8,11 @@
   -o-transition: all 0.3s;
 }
 
-.mobile-menu.active .bar:nth-child(2) {
+.mb-menu.active .bar:nth-child(2) {
   display: none;
 }
 
-.mobile-menu.active .bar:nth-child(1) {
+.mb-menu.active .bar:nth-child(1) {
   transform: translateY(6px) rotate(-45deg);
   -webkit-transform: translateY(6px) rotate(-45deg);
   -moz-transform: translateY(6px) rotate(-45deg);
@@ -20,7 +20,7 @@
   -o-transform: translateY(6px) rotate(-45deg);
 }
 
-.mobile-menu.active .bar:nth-child(3) {
+.mb-menu.active .bar:nth-child(3) {
   transform: translateY(-6px) rotate(45deg);
   -webkit-transform: translateY(-6px) rotate(45deg);
   -moz-transform: translateY(-6px) rotate(45deg);

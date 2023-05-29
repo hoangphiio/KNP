@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0;
   ::-webkit-scrollbar {
-    width: 6px;
-    border-radius: 5px;
+    width: 0.6rem;
+    border-radius: 0.5rem;
     height: 100%;
   }
   ::-webkit-scrollbar-track {
@@ -14,11 +14,11 @@
   }
   ::-webkit-scrollbar-thumb {
     background: #ddd;
-    border-radius: 16px;
+    border-radius: 1.6rem;
   }
   :hover::-webkit-scrollbar-thumb {
     background: #b9b9b9;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
 }
 
@@ -36,10 +36,6 @@ body {
 a {
   text-decoration: none;
   color: #000;
-}
-
-.main {
-  overflow: hidden;
 }
 
 button,
@@ -71,20 +67,20 @@ img {
   height: 100%;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }
 
-#bn {
-  padding-top: 70px;
-}
-
-#news,
-#contact,
-#detail {
-  padding: 70px 0;
-}
-
-#customer,
-#partner {
-  padding-top: 120px;
+.main {
+  overflow: hidden;
+  .sc-pd {
+    padding: 5rem 0;
+    &.sc-product {
+      padding-top: 10rem;
+      background: linear-gradient(0deg, #ffffff 0%, #eef6ff 100%);
+    }
+    &.sc-partner{
+      padding-bottom: 5rem;
+      background:linear-gradient(180deg, #ffffff 23.79%, #eef6ff 42.61%);
+    }
+  }
 }

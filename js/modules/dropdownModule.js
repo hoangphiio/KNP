@@ -1,21 +1,23 @@
 export default function dropdownModule() {
   $(document).ready(function () {
     const buttons = document.querySelectorAll(".btn-toggle");
-    var hamburger = $(".mobile-menu"), // mobile-menu
-      menu = $(".header-link"); //menu
+    var hamburger = $(".mb-menu"), // mobile-menu
+      overlay = $(".overlay"),
+      menu = $(".hd-nav"); //menu
 
     hamburger.on("click", function () {
       menu.toggleClass("active");
+      overlay.toggleClass("active");
       $(this).toggleClass("active");
-      $(".overlay").toggleClass("active");
     });
-    $(".mobile-menu").click(function (e) {
-      $(".menu > ul").toggleClass("show-on-mobile");
-      e.preventDefault();
+    overlay.on("click", function () {
+      $(this).toggleClass("active");
+      menu.toggleClass("active");
+      hamburger.toggleClass("active");
     });
     $(".menu > ul > li").click(function () {
       if ($(window).width() <= 1130) {
-        $(this).children("ul").fadeToggle();
+        $(this).children("ul").toggle();
       }
     });
 

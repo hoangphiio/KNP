@@ -22,11 +22,11 @@ export default function swiperModule() {
       speed: 2000,
       fadeEffect: {
         crossFade: true,
-      }, 
-      // autoplay: {
-      //   delay: 2000,
-      //   disableOnInteraction: false,
-      // },
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".banner-pagination",
         clickable: true,
