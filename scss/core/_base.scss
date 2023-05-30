@@ -73,14 +73,31 @@ img {
 .main {
   overflow: hidden;
   .sc-pd {
-    padding: 5rem 0;
-    &.sc-product {
-      padding-top: 10rem;
-      background: linear-gradient(0deg, #ffffff 0%, #eef6ff 100%);
+    padding: 10rem 0;
+    &.bg-pd {
+      background: linear-gradient(0deg, #ffffff 0%, #eef6ff 7.61%);
     }
-    &.sc-partner{
-      padding-bottom: 5rem;
-      background:linear-gradient(180deg, #ffffff 23.79%, #eef6ff 42.61%);
+    &.bg-partner {
+      background: linear-gradient(0deg, #ffffff 0%, #eef6ff 7.61%);
+    }
+    &.bt-bg {
+      background: #fafafa;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    .sc-pd {
+      padding: 5rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    .sc-pd {
+      padding: 5rem 0;
     }
   }
 }

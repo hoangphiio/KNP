@@ -1,0 +1,118 @@
+.DCM {
+  .ct {
+    &-box {
+      &.flex {
+        @include flex-al();
+        flex-wrap: wrap;
+        .ct-col {
+          width: 50%;
+          @include max(767px){
+            width: 100%;
+          }
+        }
+        .ct-title {
+          text-align: left;
+        }
+        .ct-img {
+          padding-top: calc((320 / 550) * 100%);
+        }
+      }
+      &.ct-rt {
+        flex-direction: row-reverse;
+      }
+    }
+    &-col {
+      &:nth-child(1) {
+        margin-bottom: 5rem;
+      }
+    }
+    &-title {
+      text-align: center;
+      h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffc515;
+        margin-bottom: 2.5rem;
+        @include max(767px) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 2.4rem;
+        color: #262626;
+        @include max(991px) {
+          font-size: 2rem;
+        }
+        @include max(767px){
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &-text {
+      .ct-des {
+        p {
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          color: #262626;
+          margin-bottom: 2rem;
+          @include max(991px) {
+            font-size: 2rem;
+          }
+          @include max(767px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .ct-mr {
+        @include flex();
+        ul {
+          width: calc(100% / 2);
+        }
+      }
+      ul {
+        li {
+          position: relative;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          padding-left: 3rem;
+          @include max(991px) {
+            font-size: 2rem;
+          }
+          @include max(767px) {
+            font-size: 1.6rem;
+          }
+          a {
+            color: #262626;
+          }
+          &.bl-pd {
+            margin-left: 3rem;
+          }
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+          &::before {
+            content: "";
+            top: 1.1rem;
+            left: 0;
+            bottom: 0;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #707070;
+            position: absolute;
+          }
+        }
+      }
+    }
+    &-img {
+      position: relative;
+      padding-top: calc((400 / 850) * 100%);
+      @include max(767px) {
+        padding-top: calc((320 / 550) * 110%);
+      }
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}

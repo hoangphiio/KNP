@@ -136,6 +136,7 @@
           ul {
             &.item-product {
               max-width: 25rem;
+              padding: 1.55rem;
             }
             li {
               padding: 1rem;
@@ -294,6 +295,11 @@
   }
   &-contact {
     .contact-bx {
+      @include flex-al();
+      margin: 0 -1.25rem;
+      > div{
+        padding: 0 1.25rem
+      }
       .phone {
         a {
           @include flex-al();
@@ -311,7 +317,6 @@
       }
       .language {
         cursor: pointer;
-        margin-right: 2.5rem;
         position: relative;
         @include max(450px) {
           margin-right: 1rem;
@@ -325,6 +330,7 @@
       .contact {
         width: fit-content;
         position: relative;
+        background: transparent;
         a {
           display: block;
           cursor: pointer;
@@ -587,6 +593,82 @@
                 & .contact {
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.DCM {
+  .hd {
+    &-nav {
+      ul {
+        li {
+          .hover {
+            &::before {
+              background: #ffc515;
+            }
+          }
+          &:hover {
+            .hover {
+              color: #ffc515;
+              a {
+                color: #ffc515;
+              }
+              i {
+                &::before {
+                  color: #ffc515;
+                }
+              }
+            }
+            &::before {
+              background: #ffc515;
+            }
+          }
+          a {
+            &.selected {
+              color: #ffc515;
+              &::before {
+                background: #ffc515;
+              }
+            }
+          }
+          ul {
+            &.item-product {
+              border-color: #ffc515;
+            }
+          }
+        }
+      }
+    }
+    &-contact {
+      .contact-bx {
+        .contact {
+          a {
+            border-color: rgba(255, 232, 164, 1);
+            &::before {
+              background: linear-gradient(
+                180deg,
+                #ffe8a4 -0.01%,
+                #f5c946 49.12%,
+                #fdc61d 100%
+              );
+            }
+            &::after {
+              background: linear-gradient(
+                180deg,
+                #ffe8a4 -0.01%,
+                #f5c946 49.12%,
+                #fdc61d 100%
+              );
+            }
+            span {
+              color: #544837;
+            }
+            &:hover span {
+              color: #fff;
             }
           }
         }
