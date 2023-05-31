@@ -2,16 +2,16 @@
 @import url("../js/library/hover/hover.css");
 @import url("../js/library/swiper/swiper-bundle-min.css");
 
+// core
+@import "./core/mixin";
+@import "./core/base";
+@import "./core/animation";
+@import "./core/reset";
+@import "./core/variable";
+
 // component
 @import "./component/burgerMenu";
 @import "./component/capcha";
-
-// core
-@import "./core/animation";
-@import "./core/base";
-@import "./core/mixin";
-@import "./core/reset";
-@import "./core/variable";
 
 // layout
 @import "./layout/header";

@@ -85,26 +85,32 @@
     padding: 30px;
     border-radius: 15px;
     background: #fff;
+    transition: 0.4s ease;
+    border: 0.1rem solid transparent;
+    &:hover {
+      border-color: #99c5f0;
+      box-shadow: 0 0 0.8rem #99c5f0;
+    }
     &.selected {
       border: 1px solid #28b0ff;
-      box-shadow: 0px 0px 8px #99c5f0;
+      box-shadow: 0 0 0.8rem #99c5f0;
     }
     .pd-title {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       h2 {
-        font-size: 22px;
+        font-size: 2.2rem;
         color: #262626;
-        line-height: 30px;
+        line-height: 3rem;
       }
     }
   }
   &-des {
     .des-row {
       @include flex();
-      margin: 0 -10px;
+      margin: 0 -1rem;
     }
     .des-col {
-      padding: 0 10px;
+      padding: 0 1rem;
       color: #858585;
       p {
         font-size: 18px;
@@ -118,4 +124,3 @@
     }
   }
 }
-

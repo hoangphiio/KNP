@@ -24,7 +24,7 @@ export default function swiperModule() {
         crossFade: true,
       },
       autoplay: {
-        delay: 2000,
+        delay: 8000,
         disableOnInteraction: false,
       },
       pagination: {
