@@ -462,7 +462,7 @@
             left: -100%;
             top: 0;
             z-index: 999;
-            width: 90%;
+            width: 30rem;
             height: 100vh;
             opacity: 0;
             visibility: hidden;
@@ -480,14 +480,11 @@
               justify-content: unset;
               flex-direction: column;
               align-items: stretch;
-              padding: 2.5rem;
-              @include max(767px) {
-                padding: 2.5rem 0;
-              }
+              padding: 2rem;
             }
             .hd-logo {
-              width: 25rem;
-              height: 6rem;
+              width: 100%;
+              height: auto;
               position: relative;
               @include max(767px) {
                 width: 100%;
@@ -506,7 +503,7 @@
                 width: 100%;
                 margin-left: 0;
                 margin-right: 0;
-                padding: 2rem;
+                padding: 2rem 0;
                 border-bottom: 1px solid #f2f2f2;
                 @include max(1130px) {
                   .item-product .mega {
@@ -532,6 +529,11 @@
                           }
                         }
                       }
+                    }
+                  }
+                  .item-lt.active {
+                    .ic-down {
+                      transform: rotate(180deg);
                     }
                   }
                 }
@@ -583,9 +585,9 @@
                   margin: 0;
                   padding: 0;
                   background: transparent;
-                  & .item-lt {
+                  .item-lt {
                     justify-content: space-between;
-                    & .ic-down {
+                    .ic-down {
                       &::before {
                         font-size: 1rem;
                       }

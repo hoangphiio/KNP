@@ -16,8 +16,10 @@ export default function dropdownModule() {
       hamburger.toggleClass("active");
     });
     $(".menu > ul > li").click(function () {
-      if ($(window).width() <= 1130) {
-        $(this).children("ul").toggle();
+      if ($(window).innerWidth() <= 1130) {
+        $(this).children("ul").slideToggle();
+        $(this).toggleClass("active");
+        $(this).next(".item-product").stop().slideToggle();
       }
     });
 

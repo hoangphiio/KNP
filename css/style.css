@@ -945,7 +945,7 @@ input[type="checkbox"]:checked + .checkmark > span:before {
         left: -100%;
         top: 0;
         z-index: 999;
-        width: 90%;
+        width: 30rem;
         height: 100vh;
         opacity: 0;
         visibility: hidden;
@@ -963,13 +963,10 @@ input[type="checkbox"]:checked + .checkmark > span:before {
           justify-content: unset;
           flex-direction: column;
           align-items: stretch;
-          padding: 2.5rem; }
-          @media screen and (max-width: 767px) {
-            .hd .mb-box .hd-cl:nth-child(4) .hd-nav.active {
-              padding: 2.5rem 0; } }
+          padding: 2rem; }
         .hd .mb-box .hd-cl:nth-child(4) .hd-nav .hd-logo {
-          width: 25rem;
-          height: 6rem;
+          width: 100%;
+          height: auto;
           position: relative; }
           @media screen and (max-width: 767px) {
             .hd .mb-box .hd-cl:nth-child(4) .hd-nav .hd-logo {
@@ -987,7 +984,7 @@ input[type="checkbox"]:checked + .checkmark > span:before {
             width: 100%;
             margin-left: 0;
             margin-right: 0;
-            padding: 2rem;
+            padding: 2rem 0;
             border-bottom: 1px solid #f2f2f2; }
             @media screen and (max-width: 1130px) {
               .hd .mb-box .hd-cl:nth-child(4) .hd-nav ul li .item-product .mega {
@@ -1003,6 +1000,8 @@ input[type="checkbox"]:checked + .checkmark > span:before {
                   border-bottom: 0; }
                   .hd .mb-box .hd-cl:nth-child(4) .hd-nav ul li.dropdonw-pd > ul > li > ul > li:nth-child(1) {
                     margin-bottom: 0; }
+            .hd .mb-box .hd-cl:nth-child(4) .hd-nav ul li.dropdonw-pd .item-lt.active .ic-down {
+              transform: rotate(180deg); }
             .hd .mb-box .hd-cl:nth-child(4) .hd-nav ul li.dropdown-nw > ul > li {
               border-bottom: 0; }
               .hd .mb-box .hd-cl:nth-child(4) .hd-nav ul li.dropdown-nw > ul > li > ul {
