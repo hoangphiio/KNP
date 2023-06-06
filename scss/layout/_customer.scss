@@ -4,14 +4,14 @@
     text-align: center;
     h2 {
       color: #0060ff;
-      font-size: 28px;
+      @include fz-28;
       margin-bottom: 20px;
       text-transform: uppercase;
     }
     p {
       width: 80%;
       margin: 0 auto;
-      font-size: 24px;
+      @include fz-24;
       line-height: 34px;
     }
   }
@@ -88,17 +88,14 @@
   }
   &-card {
     width: 33.3333%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     margin-bottom: 3rem;
-
     &:hover .cus-img img {
       transform: translate(-50%, -50%) scale(1.1);
     }
-    @include max(1024px) {
+    @include max(767px) {
       width: 50%;
-    }
-    @include max(600px) {
-      width: 100%;
+      padding: 0 1rem;
     }
   }
   &-box {
@@ -124,6 +121,9 @@
     height: 100%;
     background: #f8f8f8;
     flex-direction: column;
+    @include max(767px) {
+      padding: 2rem;
+    }
     h3 {
       @include lc(2);
       font-weight: 600;
@@ -142,6 +142,9 @@
     position: relative;
     .btn-detail {
       padding: 1rem 3.729rem;
+      @include max(767px) {
+        padding: 1rem 2rem;
+      }
     }
   }
   &-link {
@@ -381,6 +384,9 @@
   &-col {
     &:nth-child(1) {
       margin-bottom: 5rem;
+      @include max(991px){
+        margin-bottom: 3rem;
+      }
     }
     &:nth-child(2) {
     }
@@ -392,12 +398,12 @@
     h2 {
       color: #2645b5;
       font-weight: 700;
-      font-size: 2.8rem;
+      @include fz-28;
       margin-bottom: 2rem;
       text-transform: uppercase;
     }
     p {
-      font-size: 2.4rem;
+      @include fz-24;
       color: #262626;
     }
   }

@@ -539,6 +539,7 @@
                 }
                 &.dropdown-nw {
                   > ul {
+                    padding: 2rem;
                     > li {
                       border-bottom: 0;
                       > ul {
@@ -592,6 +593,11 @@
                         font-size: 1rem;
                       }
                     }
+                  }
+                }
+                &.active {
+                  .ic-down {
+                    transform: rotateZ(180deg);
                   }
                 }
               }

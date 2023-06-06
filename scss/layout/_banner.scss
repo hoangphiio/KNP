@@ -65,6 +65,12 @@
       font-weight: 700;
       font-size: 4.3rem;
       line-height: 6rem;
+      @include max(1200px) {
+        font-size: 3.5rem;
+      }
+      @include max(800px) {
+        font-size: 3rem;
+      }
     }
     h2 {
       opacity: 0;
@@ -78,30 +84,16 @@
     .bn-title {
       h2 {
         margin-bottom: 2rem;
-        font-size: 5rem;
+        @include fz-50;
         color: #2f281e;
-        @include max(1200px) {
-          font-size: 4rem;
-        }
-        @include max(991px) {
-          font-size: 3rem;
-        }
-        @include max(767px) {
-          font-size: 2rem;
-        }
       }
       p {
         color: #405261;
-        font-size: 2.6rem;
+        @include fz-26;
         line-height: 3.6rem;
         font-weight: 400;
         margin-bottom: 2rem;
-        @include max(991px) {
-          font-size: 2rem;
-        }
-        @include max(767px) {
-          font-size: 1.6rem;
-        }
+
         span {
           font-weight: 700;
         }
@@ -114,7 +106,6 @@
     }
     .bn-res {
       opacity: 0;
-      
     }
     .content-ds {
       opacity: 0;
@@ -129,10 +120,10 @@
           line-height: 3.5rem;
           text-align: center;
           color: #ffffff;
-          @include max(1200px){
+          @include max(1200px) {
             font-size: 2.6rem;
           }
-          @include max(1100px){
+          @include max(1100px) {
             font-size: 2.2rem;
           }
           &::before {
@@ -177,6 +168,10 @@
           box-shadow: 0 0.2rem 0.4rem rgba(4, 158, 255, 0.5);
           border-radius: 3.1rem;
           text-transform: uppercase;
+          transition: 0.4s ease-in-out;
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -270,24 +265,27 @@
     width: 85%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 3rem;
     @include max(767px) {
       width: 100%;
     }
     h3 {
       font-weight: 400;
-      font-size: 3.4rem;
+      @include fz-34;
       line-height: 4.6rem;
       color: #ffffff;
+      margin-bottom: 3rem;
       span {
         font-weight: 700;
       }
     }
   }
   &-link {
-    .btn-cn{
+    .btn-cn {
       margin: 0 auto;
       padding: 1rem 7.793rem;
+      @include max(767px){
+        padding: 1rem 5rem;
+      }
     }
   }
 }
@@ -331,12 +329,17 @@
         }
       }
       .bn-title {
+        h2 {
+          animation: fadeInUp 2s ease 1s forwards;
+        }
         p {
           color: #262626;
           margin-bottom: 4rem;
+          animation: fadeInUp 2s ease 1.5s forwards;
         }
       }
       .bn-res {
+        animation: fadeInUp 2s ease 3s forwards;
         a {
           background: linear-gradient(
             180deg,
@@ -347,6 +350,7 @@
         }
       }
       .content-img {
+        animation: fadeInRight 1.5s ease 2s forwards;
         img {
           object-fit: contain;
         }
@@ -355,33 +359,21 @@
   }
 
   .cn {
+    &-block{
+      padding: 10rem 0;
+    }
     &-box {
       padding: 0;
     }
     &-title {
-      @include max(767px) {
-        margin-bottom: 2rem;
-      }
-      h3 {
-        color: #544837;
-        @include max(991px) {
-          font-size: 3rem;
-        }
-        @include max(767px) {
-          font-size: 2rem;
-        }
+      h3{
+        color: #000;
       }
     }
     &-link {
       a {
-        font-size: 1.8rem;
-        border-radius: 3rem;
-        padding: 1.2rem 4rem;
-        background: #415086;
-        @include max(767px) {
-          font-size: 1.6rem;
-          padding: 1rem 4rem;
-        }
+        color: #000;
+        background: #fff;
       }
     }
   }
